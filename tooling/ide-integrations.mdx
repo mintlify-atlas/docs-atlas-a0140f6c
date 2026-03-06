@@ -1,0 +1,113 @@
+---
+title: "IDE Integrations"
+description: "Bring Claude Code directly into your editor with extensions for VS Code, Emacs, and Neovim"
+icon: "code"
+---
+
+IDE integrations allow you to access Claude Code's capabilities directly within your preferred code editor, streamlining your development workflow without switching contexts.
+
+## VS Code Extensions
+
+<CardGroup cols={2}>
+  <Card title="Claude Code Chat" icon="comments" href="https://marketplace.visualstudio.com/items?itemName=AndrePimenta.claude-code-chat">
+    An elegant and user-friendly Claude Code chat interface for VS Code by andrepimenta
+  </Card>
+  
+  <Card title="Claudix - Claude Code for VSCode" icon="window-maximize" href="https://github.com/Haleclipse/Claudix">
+    Comprehensive VSCode extension with interactive chat interface, session management, intelligent file operations, terminal execution, and real-time streaming responses. Built with Vue 3 and TypeScript
+  </Card>
+</CardGroup>
+
+### Features of VS Code Integrations
+
+**Claude Code Chat** provides:
+- Clean, elegant chat interface
+- Easy access to Claude Code without leaving VS Code
+- User-friendly design focused on simplicity
+
+**Claudix** offers more comprehensive features:
+- Interactive chat interface integrated into VS Code
+- Session management for organizing conversations
+- Intelligent file operations
+- Terminal execution capabilities
+- Real-time streaming responses
+- Modern tech stack (Vue 3, TypeScript)
+
+## Emacs Integrations
+
+<CardGroup cols={2}>
+  <Card title="claude-code-ide.el" icon="brackets-curly" href="https://github.com/manzaltu/claude-code-ide.el">
+    Full IDE integration for Emacs with ediff-based code suggestions, LSP/flymake/flycheck diagnostics, and extensible MCP tool support
+  </Card>
+  
+  <Card title="claude-code.el" icon="terminal" href="https://github.com/stevemolitor/claude-code.el">
+    An Emacs interface for Claude Code CLI by stevemolitor
+  </Card>
+</CardGroup>
+
+### Features of Emacs Integrations
+
+**claude-code-ide.el** provides deep integration similar to Anthropic's VS Code/IntelliJ extensions:
+- Ediff-based code suggestions for visual diffs
+- Pulls LSP/flymake/flycheck diagnostics
+- Tracks buffer context automatically
+- Extensible MCP tool support
+- Symbol references and definitions
+- Project metadata access
+- Tree-sitter AST queries
+
+**claude-code.el** offers:
+- Direct interface to Claude Code CLI
+- Command execution from within Emacs
+- Streamlined workflow for Emacs users
+
+## Neovim Integration
+
+<Card title="claude-code.nvim" icon="vim" href="https://github.com/greggh/claude-code.nvim">
+  A seamless integration between Claude Code AI assistant and Neovim by greggh
+</Card>
+
+### Features
+
+- Seamless integration with Neovim
+- AI assistant capabilities within your editor
+- Maintains Neovim's keyboard-driven workflow
+- Natural fit for Neovim users
+
+## Choosing an IDE Integration
+
+<AccordionGroup>
+  <Accordion title="VS Code Users">
+    - **For simplicity**: Choose **Claude Code Chat** for a clean chat interface
+    - **For full features**: Choose **Claudix** for comprehensive session management, file operations, and terminal execution
+  </Accordion>
+  
+  <Accordion title="Emacs Users">
+    - **For full IDE experience**: Choose **claude-code-ide.el** for deep integration with LSP, diagnostics, and MCP tools
+    - **For CLI interface**: Choose **claude-code.el** for direct access to Claude Code CLI
+  </Accordion>
+  
+  <Accordion title="Neovim Users">
+    - Use **claude-code.nvim** for seamless AI assistant integration within your Neovim workflow
+  </Accordion>
+</AccordionGroup>
+
+## Benefits of IDE Integration
+
+<CardGroup cols={2}>
+  <Card title="Context Switching" icon="arrows-left-right">
+    Stay in your editor without switching to terminal or separate windows
+  </Card>
+  
+  <Card title="Inline Assistance" icon="comment-dots">
+    Get AI assistance directly where you're coding
+  </Card>
+  
+  <Card title="Visual Diffs" icon="code-compare">
+    See code suggestions with visual diff tools (especially in Emacs integration)
+  </Card>
+  
+  <Card title="Editor Features" icon="wand-magic-sparkles">
+    Leverage your editor's existing features like diagnostics, LSP, and syntax highlighting
+  </Card>
+</CardGroup>

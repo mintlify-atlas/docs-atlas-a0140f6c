@@ -1,0 +1,97 @@
+---
+title: 'CI/CD & Deployment Commands'
+description: 'Slash commands for continuous integration, releases, and deployment workflows'
+---
+
+## Overview
+
+CI/CD commands help automate testing, releases, and deployment processes, ensuring code quality and streamlining the path from development to production.
+
+## Release Management
+
+<Card title="/release" icon="tag" href="https://github.com/kelp/webdown/blob/main/.claude/commands/release.md">
+  **by [kelp](https://github.com/kelp)**
+  
+  Manages software releases by updating changelogs, reviewing README changes, evaluating version increments, and documenting release changes for better version tracking.
+</Card>
+
+## Continuous Integration
+
+<Card title="/run-ci" icon="circle-check" href="https://github.com/hackdays-io/toban-contribution-viewer/blob/main/.claude/commands/run-ci.md">
+  **by [hackdays-io](https://github.com/hackdays-io)**
+  
+  Activates virtual environments, runs CI-compatible check scripts, iteratively fixes errors, and ensures all tests pass before completion.
+</Card>
+
+## CI/CD Benefits
+
+<CardGroup cols={2}>
+  <Card title="Automated Testing" icon="flask-vial">
+    Run comprehensive test suites automatically to catch issues before deployment.
+  </Card>
+  
+  <Card title="Consistent Releases" icon="box">
+    Standardize release processes to ensure nothing is missed.
+  </Card>
+  
+  <Card title="Quality Gates" icon="gate">
+    Enforce quality standards before code reaches production.
+  </Card>
+  
+  <Card title="Faster Deployment" icon="rocket">
+    Streamline deployment workflows to ship features faster.
+  </Card>
+</CardGroup>
+
+## CI/CD Workflow
+
+A typical CI/CD workflow using these commands:
+
+1. **Pre-commit**: Run local checks before committing code
+2. **Continuous Integration**: Use `/run-ci` to execute full test suite
+3. **Fix Issues**: Address any failures identified by CI checks
+4. **Prepare Release**: Apply `/release` to manage version and changelog
+5. **Deploy**: Follow deployment procedures after successful CI run
+
+## Release Checklist
+
+When preparing a release with `/release`:
+
+- Update version numbers following semantic versioning
+- Document all changes in the changelog
+- Review README for accuracy
+- Verify all tests pass
+- Tag the release in git
+- Generate release notes
+- Update dependencies if needed
+
+## Best Practices
+
+When using CI/CD commands:
+
+- **Run CI Locally**: Use `/run-ci` before pushing to catch issues early
+- **Semantic Versioning**: Follow semver principles for version increments
+- **Comprehensive Changelogs**: Document all user-facing changes
+- **Automated Checks**: Integrate CI commands into git hooks
+- **Release Notes**: Generate clear, user-friendly release documentation
+- **Rollback Plans**: Have procedures ready for failed deployments
+
+## Integration Points
+
+CI/CD commands work well with:
+
+- **Version Control**: Integrate with commit and PR commands
+- **Testing**: Combine with code analysis and testing commands
+- **Documentation**: Update docs as part of release process
+- **Deployment**: Trigger deployment pipelines after successful CI
+
+## Expanding Your CI/CD
+
+Consider creating custom commands for:
+
+- Environment-specific deployments (staging, production)
+- Database migrations
+- Rollback procedures
+- Performance benchmarking
+- Security scanning
+- Dependency updates

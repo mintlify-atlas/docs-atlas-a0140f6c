@@ -1,0 +1,96 @@
+---
+title: 'Code Analysis & Testing Commands'
+description: 'Slash commands for quality checks, testing, optimization, and test-driven development'
+---
+
+## Overview
+
+These slash commands help maintain code quality, identify issues, optimize performance, and implement test-driven development workflows.
+
+## Code Quality & Security
+
+<CardGroup cols={2}>
+  <Card title="/check" icon="shield-check" href="https://github.com/rygwdn/slack-tools/blob/main/.claude/commands/check.md">
+    **by [rygwdn](https://github.com/rygwdn)**
+    
+    Performs comprehensive code quality and security checks, featuring static analysis integration, security vulnerability scanning, code style enforcement, and detailed reporting.
+  </Card>
+  
+  <Card title="/code_analysis" icon="chart-line" href="https://github.com/kingler/n8n_agent/blob/main/.claude/commands/code_analysis.md">
+    **by [kingler](https://github.com/kingler)**
+    
+    Provides a menu of advanced code analysis commands for deep inspection, including knowledge graph generation, optimization suggestions, and quality evaluation.
+  </Card>
+</CardGroup>
+
+## Performance Optimization
+
+<Card title="/optimize" icon="gauge-max" href="https://github.com/to4iki/ai-project-rules/blob/main/.claude/commands/optimize.md">
+  **by [to4iki](https://github.com/to4iki)**
+  
+  Analyzes code performance to identify bottlenecks, proposing concrete optimizations with implementation guidance for improved application performance.
+</Card>
+
+## Issue Reproduction
+
+<Card title="/repro-issue" icon="bug" href="https://github.com/rzykov/metabase/blob/master/.claude/commands/repro-issue.md">
+  **by [rzykov](https://github.com/rzykov)**
+  
+  Creates reproducible test cases for GitHub issues, ensuring tests fail reliably and documenting clear reproduction steps for developers.
+</Card>
+
+## Test-Driven Development
+
+<CardGroup cols={2}>
+  <Card title="/tdd" icon="rotate" href="https://github.com/zscott/pane/blob/main/.claude/commands/tdd.md">
+    **by [zscott](https://github.com/zscott)**
+    
+    Guides development using Test-Driven Development principles, enforcing Red-Green-Refactor discipline, integrating with git workflow, and managing PR creation.
+  </Card>
+  
+  <Card title="/tdd-implement" icon="gears" href="https://github.com/jerseycheese/Narraitor/blob/feature/issue-227-ai-suggestions/.claude/commands/tdd-implement.md">
+    **by [jerseycheese](https://github.com/jerseycheese)**
+    
+    Implements Test-Driven Development by analyzing feature requirements, creating tests first (red), implementing minimal passing code (green), and refactoring while maintaining tests.
+  </Card>
+</CardGroup>
+
+## Code Analysis Workflow
+
+A typical code analysis workflow using these commands:
+
+1. **Initial Check**: Run `/check` to perform comprehensive quality and security scanning
+2. **Deep Analysis**: Use `/code_analysis` for detailed inspection and quality metrics
+3. **Performance Review**: Apply `/optimize` to identify and fix performance bottlenecks
+4. **Issue Reproduction**: Create test cases with `/repro-issue` for reported bugs
+5. **TDD Implementation**: Use `/tdd` or `/tdd-implement` for new features
+
+## Benefits of Code Analysis Commands
+
+<CardGroup cols={2}>
+  <Card title="Quality Assurance" icon="certificate">
+    Automated checks ensure consistent code quality and catch issues early in development.
+  </Card>
+  
+  <Card title="Security" icon="lock">
+    Vulnerability scanning identifies security issues before they reach production.
+  </Card>
+  
+  <Card title="Performance" icon="bolt">
+    Optimization commands help identify and resolve performance bottlenecks.
+  </Card>
+  
+  <Card title="Test Coverage" icon="check-double">
+    TDD commands enforce testing discipline and improve code reliability.
+  </Card>
+</CardGroup>
+
+## Best Practices
+
+When using code analysis and testing commands:
+
+- **Run Checks Regularly**: Integrate `/check` into your workflow before commits
+- **Follow TDD**: Use TDD commands for new features to ensure comprehensive test coverage
+- **Document Issues**: Use `/repro-issue` to create clear, reproducible test cases
+- **Optimize Strategically**: Focus optimization efforts on identified bottlenecks
+- **Continuous Improvement**: Regularly review analysis results and adjust development practices

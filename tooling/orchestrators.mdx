@@ -1,0 +1,207 @@
+---
+title: "Orchestrators"
+description: "Multi-agent frameworks and task management systems for complex software development workflows"
+icon: "network-wired"
+---
+
+Orchestrators enable complex, multi-agent workflows by managing multiple Claude Code instances, coordinating tasks, and automating the full software development lifecycle.
+
+## Full SDLC Orchestrators
+
+<CardGroup cols={2}>
+  <Card title="Auto-Claude" icon="robot" href="https://github.com/AndyMik90/Auto-Claude">
+    Autonomous multi-agent coding framework that plans, builds, and validates software. Features slick kanban-style UI and well-designed orchestration
+  </Card>
+  
+  <Card title="Claude Code Flow" icon="diagram-next" href="https://github.com/ruvnet/claude-code-flow">
+    Code-first orchestration layer enabling Claude to write, edit, test, and optimize code autonomously across recursive agent cycles
+  </Card>
+  
+  <Card title="The Agentic Startup" icon="building" href="https://github.com/rsmdt/the-startup">
+    Comprehensive collection of agents and commands for shipping production code with Output Styles support
+  </Card>
+</CardGroup>
+
+### Key Features
+
+**Auto-Claude** provides:
+- Full SDLC integration (planning, building, validation)
+- Autonomous multi-agent framework
+- Kanban-style UI for visual task management
+- Well-designed but not over-engineered architecture
+- Claude Agent SDK integration
+
+**Claude Code Flow** offers:
+- Code-first approach to orchestration
+- Autonomous editing, testing, and optimization
+- Recursive agent cycles for iterative improvement
+- Layer-based architecture for complex workflows
+
+**The Agentic Startup** features:
+- Production-ready code shipping
+- Comprehensive agent collection
+- Output Styles support (rare in the ecosystem)
+- Well-written and documented
+
+## Multi-Instance Managers
+
+<CardGroup cols={2}>
+  <Card title="Claude Squad" icon="users" href="https://github.com/smtg-ai/claude-squad">
+    Terminal app managing multiple Claude Code, Codex, and local agents (including Aider) in separate workspaces for parallel tasks
+  </Card>
+  
+  <Card title="Claude Swarm" icon="bees" href="https://github.com/parruda/claude-swarm">
+    Launch Claude Code session connected to a swarm of Claude Code Agents
+  </Card>
+  
+  <Card title="Happy Coder" icon="mobile" href="https://github.com/slopus/happy">
+    Spawn and control multiple Claude Codes in parallel from phone or desktop with push notifications. Free to run
+  </Card>
+</CardGroup>
+
+### Multi-Instance Features
+
+**Claude Squad** enables:
+- Multiple agents (Claude Code, Codex, Aider)
+- Separate workspaces for isolation
+- Simultaneous task execution
+- Terminal-based management interface
+
+**Claude Swarm** provides:
+- Swarm-based agent coordination
+- Connected agent sessions
+- Distributed task processing
+
+**Happy Coder** offers unique mobile features:
+- Control from phone or desktop
+- Push notifications for input/permissions
+- Parallel Claude Code execution
+- Zero-cost operation (runs on your hardware)
+
+## Task Management Systems
+
+<CardGroup cols={2}>
+  <Card title="Claude Task Master" icon="list-check" href="https://github.com/eyaltoledano/claude-task-master">
+    Task management system for AI-driven development with Claude, designed for seamless Cursor AI integration
+  </Card>
+  
+  <Card title="Claude Task Runner" icon="play" href="https://github.com/grahama1970/claude-task-runner">
+    Specialized tool for context isolation and focused task execution, solving context length limitations
+  </Card>
+  
+  <Card title="sudocode" icon="list" href="https://github.com/sudocode-ai/sudocode">
+    Lightweight agent orchestration dev tool living in your repo. Integrates with specification frameworks. Jira-like interface
+  </Card>
+  
+  <Card title="TSK - AI Agent Task Manager" icon="container-storage" href="https://github.com/dtormoen/tsk">
+    Rust CLI tool for delegating tasks to AI agents in sandboxed Docker environments. Parallel agents return git branches
+  </Card>
+</CardGroup>
+
+### Task Management Features
+
+**Claude Task Master**:
+- AI-driven development workflows
+- Cursor AI integration
+- Structured task management
+
+**Claude Task Runner**:
+- Context isolation for complex projects
+- Focused task execution
+- Solves context length limitations
+- Multi-step project management
+
+**sudocode**:
+- Lightweight and repo-resident
+- Specification framework integration
+- Jira-like task management interface
+- Agent orchestration capabilities
+
+**TSK**:
+- Rust-based CLI tool
+- Sandboxed Docker environments
+- Parallel agent execution
+- Git branch-based workflow
+- Human review process
+
+## Use Cases
+
+<AccordionGroup>
+  <Accordion title="End-to-End Development">
+    Use **Auto-Claude** or **The Agentic Startup** when you need:
+    - Complete SDLC automation
+    - Planning, building, and validation in one workflow
+    - Visual task management
+    - Production-ready code output
+  </Accordion>
+  
+  <Accordion title="Parallel Task Execution">
+    Use **Claude Squad**, **Claude Swarm**, or **Happy Coder** when you need:
+    - Multiple tasks running simultaneously
+    - Workspace isolation between tasks
+    - Mixed agent types (Claude Code, Codex, Aider)
+    - Mobile control and monitoring
+  </Accordion>
+  
+  <Accordion title="Complex Project Management">
+    Use **Claude Task Master**, **Claude Task Runner**, or **sudocode** when you need:
+    - Structured task breakdown
+    - Context isolation for large codebases
+    - Integration with project management tools
+    - Specification-driven development
+  </Accordion>
+  
+  <Accordion title="Safe Experimentation">
+    Use **TSK** when you need:
+    - Sandboxed execution environments
+    - Git branch-based workflows
+    - Human review before merging
+    - Parallel agent experimentation
+  </Accordion>
+</AccordionGroup>
+
+## Architecture Patterns
+
+<CardGroup cols={3}>
+  <Card title="SDLC Framework" icon="arrows-spin">
+    Full lifecycle automation with planning, execution, and validation phases
+    
+    **Examples**: Auto-Claude, Claude Code Flow
+  </Card>
+  
+  <Card title="Multi-Agent Swarm" icon="diagram-project">
+    Multiple agents working in parallel on separate or coordinated tasks
+    
+    **Examples**: Claude Squad, Claude Swarm, Happy Coder
+  </Card>
+  
+  <Card title="Task Queue" icon="bars-staggered">
+    Sequential or prioritized task execution with context management
+    
+    **Examples**: Claude Task Master, Claude Task Runner, sudocode, TSK
+  </Card>
+</CardGroup>
+
+## Choosing an Orchestrator
+
+<Steps>
+  <Step title="Define Your Workflow">
+    Determine if you need end-to-end SDLC automation, parallel execution, or task management
+  </Step>
+  
+  <Step title="Consider Scale">
+    Single large project vs. multiple smaller tasks affects your choice
+  </Step>
+  
+  <Step title="Evaluate UI Needs">
+    Some orchestrators offer visual UIs (Auto-Claude, sudocode) while others are CLI-based
+  </Step>
+  
+  <Step title="Check Integration Requirements">
+    Consider existing tools (Cursor AI, Jira, Git workflows) that need integration
+  </Step>
+  
+  <Step title="Review Isolation Needs">
+    Determine if you need sandboxing (TSK) or just workspace separation (Claude Squad)
+  </Step>
+</Steps>

@@ -1,0 +1,102 @@
+---
+title: 'Version Control & Git Commands'
+description: 'Slash commands for git operations, commits, pull requests, and issue management'
+---
+
+## Overview
+
+These slash commands help automate common git workflows, enforce commit standards, and streamline collaboration through GitHub integration.
+
+## Issue Analysis & Management
+
+<CardGroup cols={2}>
+  <Card title="/analyze-issue" icon="magnifying-glass" href="https://github.com/jerseycheese/Narraitor/blob/feature/issue-227-ai-suggestions/.claude/commands/analyze-issue.md">
+    **by [jerseycheese](https://github.com/jerseycheese)**
+    
+    Fetches GitHub issue details to create comprehensive implementation specifications, analyzing requirements and planning structured approach with clear implementation steps.
+  </Card>
+  
+  <Card title="/fix-github-issue" icon="wrench" href="https://github.com/jeremymailen/kotlinter-gradle/blob/master/.claude/commands/fix-github-issue.md">
+    **by [jeremymailen](https://github.com/jeremymailen)**
+    
+    Analyzes and fixes GitHub issues using a structured approach with GitHub CLI for issue details, implementing necessary code changes, running tests, and creating proper commit messages.
+  </Card>
+  
+  <Card title="/fix-issue" icon="hammer" href="https://github.com/metabase/metabase/blob/master/.claude/commands/fix-issue.md">
+    **by [metabase](https://github.com/metabase)**
+    
+    Addresses GitHub issues by taking issue number as parameter, analyzing context, implementing solution, and testing/validating the fix for proper integration.
+  </Card>
+</CardGroup>
+
+## Commit Management
+
+<CardGroup cols={2}>
+  <Card title="/commit" icon="code-commit" href="https://github.com/evmts/tevm-monorepo/blob/main/.claude/commands/commit.md">
+    **by [evmts](https://github.com/evmts)**
+    
+    Creates git commits using conventional commit format with appropriate emojis, following project standards and creating descriptive messages that explain the purpose of changes.
+  </Card>
+  
+  <Card title="/commit-fast" icon="gauge-high" href="https://github.com/steadycursor/steadystart/blob/main/.claude/commands/2-commit-fast.md">
+    **by [steadycursor](https://github.com/steadycursor)**
+    
+    Automates git commit process by selecting the first suggested message, generating structured commits with consistent formatting while skipping manual confirmation and removing Claude co-Contributorship footer.
+  </Card>
+</CardGroup>
+
+## Pull Request Management
+
+<CardGroup cols={2}>
+  <Card title="/create-pr" icon="code-pull-request" href="https://github.com/toyamarinyon/giselle/blob/main/.claude/commands/create-pr.md">
+    **by [toyamarinyon](https://github.com/toyamarinyon)**
+    
+    Streamlines pull request creation by handling the entire workflow: creating a new branch, committing changes, formatting modified files with Biome, and submitting the PR.
+  </Card>
+  
+  <Card title="/create-pull-request" icon="git-alt" href="https://github.com/liam-hq/liam/blob/main/.claude/commands/create-pull-request.md">
+    **by [liam-hq](https://github.com/liam-hq)**
+    
+    Provides comprehensive PR creation guidance with GitHub CLI, enforcing title conventions, following template structure, and offering concrete command examples with best practices.
+  </Card>
+  
+  <Card title="/fix-pr" icon="code-merge" href="https://github.com/metabase/metabase/blob/master/.claude/commands/fix-pr.md">
+    **by [metabase](https://github.com/metabase)**
+    
+    Fetches and fixes unresolved PR comments by automatically retrieving feedback, addressing reviewer concerns, making targeted code improvements, and streamlining the review process.
+  </Card>
+</CardGroup>
+
+## Branch & Worktree Management
+
+<CardGroup cols={2}>
+  <Card title="/create-worktrees" icon="code-branch" href="https://github.com/evmts/tevm-monorepo/blob/main/.claude/commands/create-worktrees.md">
+    **by [evmts](https://github.com/evmts)**
+    
+    Creates git worktrees for all open PRs or specific branches, handling branches with slashes, cleaning up stale worktrees, and supporting custom branch creation for development.
+  </Card>
+  
+  <Card title="/update-branch-name" icon="pen" href="https://github.com/giselles-ai/giselle/blob/main/.claude/commands/update-branch-name.md">
+    **by [giselles-ai](https://github.com/giselles-ai)**
+    
+    Updates branch names with proper prefixes and formats, enforcing naming conventions, supporting semantic prefixes, and managing remote branch updates.
+  </Card>
+</CardGroup>
+
+## Git Hooks
+
+<Card title="/husky" icon="dog" href="https://github.com/evmts/tevm-monorepo/blob/main/.claude/commands/husky.md">
+  **by [evmts](https://github.com/evmts)**
+  
+  Sets up and manages Husky Git hooks by configuring pre-commit hooks, establishing commit message standards, integrating with linting tools, and ensuring code quality on commits.
+</Card>
+
+## Best Practices
+
+When using version control slash commands:
+
+- **Consistent Standards**: Use commit commands to enforce conventional commit formats
+- **Issue Tracking**: Link commits and PRs to issues for better traceability
+- **Review Automation**: Leverage PR commands to streamline the review process
+- **Branch Hygiene**: Use branch management commands to maintain clean repository structure
+- **Pre-commit Checks**: Set up git hooks to catch issues before they're committed

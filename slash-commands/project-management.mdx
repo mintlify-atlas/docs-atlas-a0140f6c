@@ -1,0 +1,128 @@
+---
+title: 'Project & Task Management Commands'
+description: 'Slash commands for managing tasks, issues, planning, and project organization'
+---
+
+## Overview
+
+Project management commands help organize development work, create comprehensive planning documents, and streamline task execution.
+
+## Command Creation
+
+<Card title="/create-command" icon="terminal" href="https://github.com/scopecraft/command/blob/main/.claude/commands/create-command.md">
+  **by [scopecraft](https://github.com/scopecraft)**
+  
+  Guides Claude through creating new custom commands with proper structure by analyzing requirements, templating commands by category, enforcing command standards, and creating supporting documentation.
+</Card>
+
+## Product Planning
+
+<CardGroup cols={2}>
+  <Card title="/create-plan" icon="clipboard-list" href="https://github.com/hesreallyhim/inkverse-fork/blob/preserve-claude-resources/.claude/commands/create-plan.md">
+    **by [taddyorg](https://github.com/taddyorg)**
+    
+    Generates comprehensive product requirement documents outlining detailed specifications, requirements, and features following standardized document structure and format. *(Removed from origin)*
+  </Card>
+  
+  <Card title="/create-prp" icon="file-contract" href="https://github.com/Wirasm/claudecode-utils/blob/main/.claude/commands/create-prp.md">
+    **by [Wirasm](https://github.com/Wirasm)**
+    
+    Creates product requirement plans by reading PRP methodology, following template structure, creating comprehensive requirements, and structuring product definitions for development.
+  </Card>
+  
+  <Card title="/prd-generator" icon="file-pen" href="https://github.com/dredozubov/prd-generator">
+    **by [Denis Redozubov](https://github.com/dredozubov)**
+    
+    A Claude Code plugin that generates comprehensive Product Requirements Documents (PRDs) from conversation context. Invoke `/create-prd` after discussing requirements and it produces a complete PRD with all standard sections including Executive Summary, User Stories, MVP Scope, Architecture, Success Criteria, and Implementation Phases.
+  </Card>
+</CardGroup>
+
+## Issue Management
+
+<Card title="/do-issue" icon="circle-exclamation" href="https://github.com/jerseycheese/Narraitor/blob/feature/issue-227-ai-suggestions/.claude/commands/do-issue.md">
+  **by [jerseycheese](https://github.com/jerseycheese)**
+  
+  Implements GitHub issues with manual review points, following a structured approach with issue number parameter and offering alternative automated mode for efficiency.
+</Card>
+
+## Task Management
+
+<Card title="/todo" icon="list-check" href="https://github.com/chrisleyva/todo-slash-command/blob/main/todo.md">
+  **by [chrisleyva](https://github.com/chrisleyva)**
+  
+  A convenient command to quickly manage project todo items without leaving the Claude Code interface, featuring due dates, sorting, task prioritization, and comprehensive todo list management.
+</Card>
+
+## Development Examples
+
+<Card title="/project_hello_w_name" icon="hand-wave" href="https://github.com/disler/just-prompt/blob/main/.claude/commands/project_hello_w_name.md">
+  **by [disler](https://github.com/disler)**
+  
+  Creates customizable greeting components with name input, demonstrating argument passing, component reusability, state management, and user input handling.
+</Card>
+
+## Project Management Benefits
+
+<CardGroup cols={2}>
+  <Card title="Structured Planning" icon="sitemap">
+    Create comprehensive requirement documents and project plans.
+  </Card>
+  
+  <Card title="Task Organization" icon="tasks">
+    Keep track of todos, issues, and development tasks in one place.
+  </Card>
+  
+  <Card title="Consistency" icon="stamp">
+    Follow standardized templates and processes across projects.
+  </Card>
+  
+  <Card title="Efficiency" icon="gauge-high">
+    Automate routine project management tasks to focus on development.
+  </Card>
+</CardGroup>
+
+## Project Management Workflow
+
+A comprehensive project management workflow:
+
+1. **Initial Planning**: Use `/create-plan` or `/create-prp` for requirements
+2. **Task Breakdown**: Create issues and todos with `/todo`
+3. **Implementation**: Use `/do-issue` to work through tasks systematically
+4. **Custom Commands**: Create project-specific commands with `/create-command`
+5. **Track Progress**: Maintain todo list and update requirements as needed
+
+## Planning Document Sections
+
+Comprehensive PRDs should include:
+
+- **Executive Summary**: High-level project overview
+- **User Stories**: Detailed user requirements and scenarios
+- **MVP Scope**: Clear definition of minimum viable product
+- **Architecture**: Technical design and system structure
+- **Success Criteria**: Measurable goals and KPIs
+- **Implementation Phases**: Timeline and development stages
+- **Dependencies**: Required resources and integrations
+- **Risks**: Potential challenges and mitigation strategies
+
+## Best Practices
+
+When using project management commands:
+
+- **Plan Before Coding**: Create PRDs before starting implementation
+- **Break Down Tasks**: Divide large projects into manageable issues
+- **Track Progress**: Regularly update todo lists and issue status
+- **Document Decisions**: Record technical choices and rationale
+- **Review Requirements**: Validate plans with stakeholders early
+- **Create Reusable Commands**: Build custom commands for recurring patterns
+- **Maintain Templates**: Keep standardized formats for consistency
+
+## Custom Command Creation
+
+When creating custom commands with `/create-command`:
+
+1. Identify recurring workflows that could be automated
+2. Define clear parameters and expected outputs
+3. Follow project-specific conventions and standards
+4. Include helpful documentation and examples
+5. Test commands thoroughly before team adoption
+6. Share useful commands with your team and community

@@ -1,0 +1,101 @@
+---
+title: 'Documentation & Changelog Commands'
+description: 'Slash commands for generating and maintaining project documentation and changelogs'
+---
+
+## Overview
+
+Documentation commands help automate the creation and maintenance of project documentation, ensuring consistency and completeness across your codebase.
+
+## Documentation Generation
+
+<CardGroup cols={2}>
+  <Card title="/create-docs" icon="file-code" href="https://github.com/jerseycheese/Narraitor/blob/feature/issue-227-ai-suggestions/.claude/commands/create-docs.md">
+    **by [jerseycheese](https://github.com/jerseycheese)**
+    
+    Analyzes code structure and purpose to create comprehensive documentation detailing inputs/outputs, behavior, user interaction flows, and edge cases with error handling.
+  </Card>
+  
+  <Card title="/docs" icon="book" href="https://github.com/slunsford/coffee-analytics/blob/main/.claude/commands/docs.md">
+    **by [slunsford](https://github.com/slunsford)**
+    
+    Generates comprehensive documentation that follows project structure, documenting APIs and usage patterns with consistent formatting for better user understanding.
+  </Card>
+</CardGroup>
+
+## Documentation Maintenance
+
+<Card title="/update-docs" icon="pen-to-square" href="https://github.com/Consiliency/Flutter-Structurizr/blob/main/.claude/commands/update-docs.md">
+  **by [Consiliency](https://github.com/Consiliency)**
+  
+  Reviews current documentation status, updates implementation progress, reviews phase documents, and maintains documentation consistency across the project.
+</Card>
+
+## Changelog Management
+
+<Card title="/add-to-changelog" icon="list" href="https://github.com/berrydev-ai/blockdoc-python/blob/main/.claude/commands/add-to-changelog.md">
+  **by [berrydev-ai](https://github.com/berrydev-ai)**
+  
+  Adds new entries to changelog files while maintaining format consistency, properly documenting changes, and following established project standards for version tracking.
+</Card>
+
+## Issue Documentation
+
+<Card title="/explain-issue-fix" icon="comment" href="https://github.com/hackdays-io/toban-contribution-viewer/blob/main/.claude/commands/explain-issue-fix.md">
+  **by [hackdays-io](https://github.com/hackdays-io)**
+  
+  Documents solution approaches for GitHub issues, explaining technical decisions, detailing challenges overcome, and providing implementation context for better understanding.
+</Card>
+
+## Documentation Benefits
+
+<CardGroup cols={2}>
+  <Card title="Consistency" icon="equals">
+    Automated documentation ensures consistent formatting and structure across your project.
+  </Card>
+  
+  <Card title="Completeness" icon="check-circle">
+    Commands analyze code to ensure all aspects are properly documented.
+  </Card>
+  
+  <Card title="Time Savings" icon="clock">
+    Automate repetitive documentation tasks to focus on development.
+  </Card>
+  
+  <Card title="Better Onboarding" icon="user-plus">
+    Comprehensive docs help new team members understand the codebase faster.
+  </Card>
+</CardGroup>
+
+## Documentation Workflow
+
+A recommended workflow for documentation:
+
+1. **Initial Creation**: Use `/create-docs` or `/docs` for new features or modules
+2. **Maintain Changelogs**: Apply `/add-to-changelog` after significant changes
+3. **Update Existing**: Run `/update-docs` to refresh documentation after refactoring
+4. **Document Solutions**: Use `/explain-issue-fix` when resolving complex issues
+5. **Review & Refine**: Regularly review generated documentation for accuracy
+
+## Best Practices
+
+When using documentation commands:
+
+- **Document Early**: Create documentation alongside code, not as an afterthought
+- **Keep It Current**: Update documentation whenever code changes
+- **Be Comprehensive**: Document edge cases, error handling, and user flows
+- **Follow Standards**: Maintain consistent formatting and structure
+- **Version Control**: Track changelog entries with semantic versioning
+- **Link to Code**: Include references to specific files and line numbers
+
+## Documentation Standards
+
+Good documentation should include:
+
+- **Purpose**: What the code does and why it exists
+- **Usage**: How to use the API or feature
+- **Parameters**: Input types, constraints, and defaults
+- **Returns**: Output types and possible values
+- **Examples**: Common use cases and code samples
+- **Edge Cases**: Error conditions and how they're handled
+- **Dependencies**: Required libraries or services

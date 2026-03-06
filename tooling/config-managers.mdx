@@ -1,0 +1,298 @@
+---
+title: "Config Managers"
+description: "Tools for managing and validating Claude Code configuration files and rules"
+icon: "gear"
+---
+
+Configuration management tools help you maintain, validate, and switch between different Claude Code configurations, ensuring your rules and settings work correctly across projects.
+
+## Available Tools
+
+<CardGroup cols={2}>
+  <Card title="claude-rules-doctor" icon="stethoscope" href="https://github.com/nulone/claude-rules-doctor">
+    CLI that detects dead `.claude/rules/` files by checking if glob patterns match actual files in your repo
+  </Card>
+  
+  <Card title="ClaudeCTX" icon="arrows-rotate" href="https://github.com/foxj77/claudectx">
+    Switch your entire Claude Code configuration with a single command
+  </Card>
+</CardGroup>
+
+## claude-rules-doctor
+
+Validate your Claude Code rules configuration to catch silent failures and ensure rules apply correctly.
+
+### Key Features
+
+<CardGroup cols={2}>
+  <Card title="Dead Rule Detection" icon="skull">
+    Identifies rules with `paths:` globs that don't match any files in your repository
+  </Card>
+  
+  <Card title="CI Integration" icon="code-branch">
+    CI mode exits with code 1 when dead rules are found, perfect for automated checks
+  </Card>
+  
+  <Card title="JSON Output" icon="brackets-curly">
+    Machine-readable output format for integration with other tools
+  </Card>
+  
+  <Card title="Verbose Mode" icon="list">
+    Show which files are matched by each rule for debugging
+  </Card>
+</CardGroup>
+
+### Common Issues Detected
+
+<Accordion title="Renamed Directories">
+When you rename a directory but forget to update the glob patterns in your rules:
+
+```yaml
+# .claude/rules/frontend.md
+paths:
+  - src/client/**  # Directory was renamed to src/app/
+```
+
+claudeclaude-rules-doctor will detect this rule never applies.
+</Accordion>
+
+<Accordion title="Typos in Glob Patterns">
+Typographical errors in path specifications:
+
+```yaml
+paths:
+  - src/compnents/**  # Typo: should be "components"
+```
+
+The rule silently fails to apply, but claude-rules-doctor catches it.
+</Accordion>
+
+<Accordion title="Deleted Files">
+Rules pointing to files or directories that no longer exist:
+
+```yaml
+paths:
+  - legacy/api/**  # This directory was removed
+```
+</Accordion>
+
+### Usage Examples
+
+<CodeGroup>
+```bash Basic Check
+clauderules-doctor
+```
+
+```bash CI Mode
+# Exit 1 if dead rules found
+claude-rules-doctor --ci
+```
+
+```bash JSON Output
+claude-rules-doctor --json
+```
+
+```bash Verbose Mode
+# Show matched files for each rule
+claude-rules-doctor --verbose
+```
+</CodeGroup>
+
+### Workflow Integration
+
+Integrate claude-rules-doctor into your development workflow:
+
+<Steps>
+  <Step title="Pre-commit Hook">
+    Add to `.git/hooks/pre-commit` to validate rules before committing
+  </Step>
+  
+  <Step title="CI Pipeline">
+    Run with `--ci` flag in your GitHub Actions or GitLab CI pipeline
+  </Step>
+  
+  <Step title="Regular Audits">
+    Schedule periodic checks, especially after refactoring directory structures
+  </Step>
+</Steps>
+
+## ClaudeCTX
+
+Quickly switch between different Claude Code configurations for different projects or contexts.
+
+### Key Features
+
+<CardGroup cols={2}>
+  <Card title="Single Command" icon="terminal">
+    Switch entire configuration with one command
+  </Card>
+  
+  <Card title="Configuration Sets" icon="layer-group">
+    Manage multiple complete configuration sets
+  </Card>
+  
+  <Card title="Fast Switching" icon="bolt">
+    Instant context changes without manual file editing
+  </Card>
+  
+  <Card title="Project Isolation" icon="folders">
+    Keep configurations separate per project or workflow
+  </Card>
+</CardGroup>
+
+### Use Cases
+
+<AccordionGroup>
+  <Accordion title="Multi-Project Development">
+    Switch between different project configurations:
+    
+    - Frontend project with React-specific rules
+    - Backend project with API development rules
+    - Data science project with notebook-specific settings
+    
+    Each project can have its own complete configuration set.
+  </Accordion>
+  
+  <Accordion title="Different Work Modes">
+    Adapt your configuration to your current task:
+    
+    - **Development mode**: Full features enabled
+    - **Review mode**: Focused on code review rules
+    - **Documentation mode**: Writing and editing docs
+    - **Debugging mode**: Specialized debugging tools
+  </Accordion>
+  
+  <Accordion title="Team Configurations">
+    Share and switch between team-standardized configurations:
+    
+    - Team A's coding standards
+    - Team B's workflow preferences
+    - Company-wide defaults
+    - Personal customizations
+  </Accordion>
+  
+  <Accordion title="Experimentation">
+    Test new configurations without losing your working setup:
+    
+    - Create experimental configuration
+    - Switch to test new rules/commands
+    - Easily revert to stable configuration
+  </Accordion>
+</AccordionGroup>
+
+### Typical Workflow
+
+<Steps>
+  <Step title="Create Configuration Sets">
+    Set up different complete configurations for various contexts
+  </Step>
+  
+  <Step title="Name Your Configs">
+    Give each configuration a descriptive name (e.g., "frontend", "backend", "docs")
+  </Step>
+  
+  <Step title="Switch as Needed">
+    Use ClaudeCTX to instantly switch between configurations
+  </Step>
+  
+  <Step title="Update Independently">
+    Maintain and update each configuration set separately
+  </Step>
+</Steps>
+
+## Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Regular Validation" icon="calendar-check">
+    Run claude-rules-doctor regularly, especially after:
+    - Directory restructuring
+    - Large refactoring
+    - Adding new rules
+    - Merging branches
+  </Card>
+  
+  <Card title="Configuration Versioning" icon="code-branch">
+    Keep your configuration sets in version control:
+    - Track changes over time
+    - Share with team members
+    - Rollback if needed
+  </Card>
+  
+  <Card title="Documentation" icon="book">
+    Document your configuration sets:
+    - What each config is for
+    - When to use it
+    - Special considerations
+  </Card>
+  
+  <Card title="Automated Checks" icon="robot">
+    Automate configuration validation:
+    - CI pipeline checks
+    - Pre-commit hooks
+    - Scheduled audits
+  </Card>
+</CardGroup>
+
+## Integration Example
+
+Combine both tools for robust configuration management:
+
+<CodeGroup>
+```bash Pre-Commit Hook
+#!/bin/bash
+# .git/hooks/pre-commit
+
+# Validate rules before committing
+claude-rules-doctor --ci
+
+if [ $? -ne 0 ]; then
+  echo "❌ Dead rules detected. Fix before committing."
+  exit 1
+fi
+
+echo "✅ All rules are valid"
+```
+
+```bash Project Switch Script
+#!/bin/bash
+# switch-project.sh
+
+PROJECT=$1
+
+# Switch configuration
+claudectx $PROJECT
+
+# Validate new configuration
+claude-rules-doctor --ci
+
+if [ $? -ne 0 ]; then
+  echo "⚠️  Warning: Some rules may not apply"
+fi
+```
+</CodeGroup>
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Rules Not Applying">
+    Use claude-rules-doctor to check if:
+    - Glob patterns match actual files
+    - File paths are correct
+    - Rules are in the right location
+  </Accordion>
+  
+  <Accordion title="Configuration Conflicts">
+    When switching with ClaudeCTX:
+    - Ensure configurations don't overlap unexpectedly
+    - Check for conflicting rules
+    - Verify MCP server compatibility
+  </Accordion>
+  
+  <Accordion title="Silent Rule Failures">
+    Common causes detected by claude-rules-doctor:
+    - Renamed directories
+    - Typos in paths
+    - Deleted files
+    - Case sensitivity issues
+  </Accordion>
+</AccordionGroup>

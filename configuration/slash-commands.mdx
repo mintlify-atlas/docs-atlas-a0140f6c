@@ -1,0 +1,136 @@
+---
+title: Slash Commands
+description: Customized, carefully refined prompts that control Claude's behavior for specific tasks
+---
+
+Slash Commands are customized, carefully refined prompts that control Claude's behavior in order to perform a specific task. They provide a structured way to guide Claude through common development workflows and operations.
+
+## What Are Slash Commands?
+
+Slash commands are special prompts that start with a forward slash (`/`) and trigger specific behaviors or workflows in Claude Code. They act as shortcuts for common tasks, ensuring consistency and reducing the need to write detailed instructions each time.
+
+### Key Benefits
+
+- **Consistency**: Standardize how common tasks are performed across your team
+- **Efficiency**: Execute complex workflows with a single command
+- **Reusability**: Share and reuse proven prompts across projects
+- **Customization**: Tailor Claude's behavior to your specific needs and conventions
+- **Documentation**: Commands serve as living documentation of your development processes
+
+## Command Categories
+
+Slash commands are organized into several categories based on their purpose:
+
+<CardGroup cols={2}>
+  <Card
+    title="Version Control & Git"
+    icon="code-branch"
+    href="/slash-commands/version-control"
+  >
+    Commands for managing commits, pull requests, branches, and GitHub issues.
+  </Card>
+
+  <Card
+    title="Code Analysis & Testing"
+    icon="magnifying-glass"
+    href="/slash-commands/code-analysis"
+  >
+    Commands for code quality checks, testing, and performance optimization.
+  </Card>
+
+  <Card
+    title="Context Loading & Priming"
+    icon="brain"
+    href="/slash-commands/context-loading"
+  >
+    Commands for loading project context and priming Claude with relevant information.
+  </Card>
+
+  <Card
+    title="Documentation & Changelogs"
+    icon="book"
+    href="/slash-commands/documentation"
+  >
+    Commands for generating and maintaining documentation and changelogs.
+  </Card>
+
+  <Card
+    title="CI / Deployment"
+    icon="rocket"
+    href="/slash-commands/ci-deployment"
+  >
+    Commands for continuous integration, releases, and deployment workflows.
+  </Card>
+
+  <Card
+    title="Project & Task Management"
+    icon="list-check"
+    href="/slash-commands/project-management"
+  >
+    Commands for managing tasks, creating plans, and organizing development work.
+  </Card>
+</CardGroup>
+
+## How Slash Commands Work
+
+When you invoke a slash command:
+
+1. **Trigger**: You type the command name (e.g., `/commit`, `/tdd`, `/docs`)
+2. **Load**: Claude loads the associated prompt or workflow
+3. **Execute**: Claude follows the instructions defined in the command
+4. **Output**: Claude performs the task according to the command's specifications
+
+## Creating Custom Slash Commands
+
+You can create your own slash commands tailored to your project's needs:
+
+```markdown
+# Command: /my-command
+
+## Description
+Brief description of what this command does
+
+## Instructions
+1. Step one
+2. Step two
+3. Step three
+
+## Examples
+Provide examples of expected input/output
+```
+
+<Tip>
+Many projects include a `/create-command` slash command that helps you create new custom commands with proper structure and best practices.
+</Tip>
+
+## Popular Slash Commands
+
+Some of the most commonly used slash commands include:
+
+- **`/commit`**: Create properly formatted git commits
+- **`/create-pr`**: Streamline pull request creation
+- **`/tdd`**: Guide Test-Driven Development workflows
+- **`/docs`**: Generate comprehensive documentation
+- **`/optimize`**: Analyze and improve code performance
+- **`/context-prime`**: Load comprehensive project context
+
+## Getting Started
+
+1. Explore the command categories to find commands relevant to your workflow
+2. Review example commands from similar projects
+3. Start with simple commands before creating complex workflows
+4. Document your custom commands for team sharing
+5. Iterate and refine commands based on actual usage
+
+<Note>
+Slash commands are stored in the `.claude/commands/` directory of your project. Each command is typically a separate markdown file that defines its behavior.
+</Note>
+
+## Best Practices
+
+- **Keep commands focused**: Each command should do one thing well
+- **Use clear names**: Command names should be self-explanatory
+- **Include examples**: Show expected input and output
+- **Document parameters**: Clearly specify any required or optional parameters
+- **Test thoroughly**: Ensure commands work as expected before sharing
+- **Version control**: Keep commands in your repository for team collaboration

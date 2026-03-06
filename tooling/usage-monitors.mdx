@@ -1,0 +1,146 @@
+---
+title: "Usage Monitors"
+description: "Track token usage, costs, and conversation history with dashboards and analytics tools"
+icon: "chart-line"
+---
+
+Usage monitoring tools help you track token consumption, analyze costs, explore conversation history, and optimize your Claude Code usage through detailed analytics and visualizations.
+
+## Dashboard Tools
+
+<CardGroup cols={2}>
+  <Card title="ccflare" icon="chart-mixed" href="https://github.com/snipeship/ccflare">
+    Claude Code usage dashboard with stunning web UI, comprehensive metrics, frictionless setup, and detailed logging
+  </Card>
+  
+  <Card title="better-ccflare" icon="chart-line-up" href="https://github.com/tombii/better-ccflare/">
+    Well-maintained and feature-enhanced fork of ccflare with performance enhancements, extended provider support, bug fixes, and Docker deployment
+  </Card>
+</CardGroup>
+
+### ccflare vs better-ccflare
+
+**ccflare** is the original dashboard tool with:
+- Web UI that rivals professional analytics platforms
+- Thoroughly comprehensive metrics
+- Frictionless setup process
+- Detailed logging capabilities
+- Beautiful, intuitive interface
+
+**better-ccflare** builds on this foundation with:
+- Active maintenance and updates
+- Performance enhancements
+- Extended provider support
+- Bug fixes and stability improvements
+- Docker deployment option
+- Community-driven improvements
+
+<Tip>
+If you're choosing between the two, **better-ccflare** is recommended for active projects as it receives regular updates and improvements.
+</Tip>
+
+## CLI-Based Monitors
+
+<CardGroup cols={2}>
+  <Card title="CC Usage" icon="terminal" href="https://github.com/ryoppippi/ccusage">
+    Handy CLI tool for managing and analyzing usage based on local logs. Presents dashboard with cost information and token consumption
+  </Card>
+  
+  <Card title="Claude Code Usage Monitor" icon="gauge-high" href="https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor">
+    Real-time terminal-based monitoring with live token consumption, burn rate, predictions, visual progress bars, and session-aware analytics
+  </Card>
+</CardGroup>
+
+### Features Comparison
+
+**CC Usage** provides:
+- Analysis based on local Claude Code logs
+- Dashboard view in terminal
+- Cost information tracking
+- Token consumption metrics
+- Lightweight CLI interface
+
+**Claude Code Usage Monitor** offers real-time features:
+- Live token consumption tracking
+- Burn rate calculations
+- Token depletion predictions
+- Visual progress bars
+- Session-aware analytics
+- Support for multiple subscription plans
+
+## Conversation History Explorers
+
+<Card title="Claudex" icon="book-open" href="https://github.com/kunwar-shah/claudex">
+  Web-based browser for exploring conversation history across projects with full-text search, analytics dashboard, and multiple export options. Completely local with no telemetry
+</Card>
+
+### Claudex Features
+
+- **Full-text search**: Indexes your codebase for comprehensive searching
+- **Cross-project browsing**: Explore conversations across all your projects
+- **Nice UI**: Easy-to-navigate interface
+- **Analytics dashboard**: High-level analytics and insights
+- **Multiple export options**: Export conversations in various formats
+- **Privacy-focused**: Completely local with no telemetry
+
+## Community Tools
+
+<Card title="viberank" icon="ranking-star" href="https://github.com/sculptdotfun/viberank">
+  Community-driven leaderboard for visualizing, tracking, and competing based on Claude Code usage statistics with robust analytics and GitHub OAuth
+</Card>
+
+### viberank Features
+
+- **Community leaderboard**: Compare your usage with other developers
+- **Robust data analytics**: Deep insights into usage patterns
+- **GitHub OAuth integration**: Secure authentication
+- **Data validation**: Ensures accurate statistics
+- **CLI submission**: Easy data submission from command line
+- **Web interface**: User-friendly web-based submission and viewing
+
+## Use Cases
+
+<AccordionGroup>
+  <Accordion title="Cost Management">
+    Use **CC Usage** or **ccflare/better-ccflare** to:
+    - Track your spending on Claude Code
+    - Analyze cost trends over time
+    - Identify high-cost sessions or patterns
+    - Plan budget allocation for AI assistance
+  </Accordion>
+  
+  <Accordion title="Real-Time Monitoring">
+    Use **Claude Code Usage Monitor** to:
+    - Watch token consumption in real-time
+    - Get predictions for token depletion
+    - Monitor burn rate during active sessions
+    - Track progress against subscription limits
+  </Accordion>
+  
+  <Accordion title="Historical Analysis">
+    Use **Claudex** to:
+    - Browse past conversations
+    - Search for specific discussions or solutions
+    - Export conversations for documentation
+    - Review project-specific interaction patterns
+  </Accordion>
+  
+  <Accordion title="Team Collaboration">
+    Use **viberank** to:
+    - Share usage statistics with your team
+    - Compete in friendly challenges
+    - Discover community best practices
+    - Benchmark against other developers
+  </Accordion>
+</AccordionGroup>
+
+## Quick Comparison
+
+| Tool | Interface | Real-Time | History | Export | Privacy |
+|------|-----------|-----------|---------|--------|--------|
+| ccflare | Web | Yes | Yes | Yes | Local |
+| better-ccflare | Web | Yes | Yes | Yes | Local |
+| CC Usage | CLI | No | Yes | Limited | Local |
+| Usage Monitor | CLI | Yes | No | No | Local |
+| Claudex | Web | No | Yes | Yes | Local |
+| viberank | Web | No | Yes | Yes | Cloud |

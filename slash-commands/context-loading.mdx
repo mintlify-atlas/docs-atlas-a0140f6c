@@ -1,0 +1,101 @@
+---
+title: 'Context Loading & Priming Commands'
+description: 'Slash commands to prime Claude with project context, documentation, and domain knowledge'
+---
+
+## Overview
+
+Context loading commands help Claude understand your project structure, domain-specific terminology, and development conventions. By priming Claude with the right context, you get more accurate and project-appropriate responses.
+
+## Comprehensive Context Priming
+
+<CardGroup cols={2}>
+  <Card title="/context-prime" icon="brain" href="https://github.com/elizaOS/elizaos.github.io/blob/main/.claude/commands/context-prime.md">
+    **by [elizaOS](https://github.com/elizaOS)**
+    
+    Primes Claude with comprehensive project understanding by loading repository structure, setting development context, establishing project goals, and defining collaboration parameters.
+  </Card>
+  
+  <Card title="/prime" icon="play" href="https://github.com/yzyydev/AI-Engineering-Structure/blob/main/.claude/commands/prime.md">
+    **by [yzyydev](https://github.com/yzyydev)**
+    
+    Sets up initial project context by viewing directory structure and reading key files, creating standardized context with directory visualization and key documentation focus.
+  </Card>
+  
+  <Card title="/rsi" icon="book-open" href="https://github.com/ddisisto/si/blob/main/.claude/commands/rsi.md">
+    **by [ddisisto](https://github.com/ddisisto)**
+    
+    Reads all commands and key project files to optimize AI-assisted development by streamlining the process, loading command context, and setting up for better development workflow.
+  </Card>
+</CardGroup>
+
+## Documentation & Reference Loading
+
+<CardGroup cols={2}>
+  <Card title="/initref" icon="file-lines" href="https://github.com/okuvshynov/cubestat/blob/main/.claude/commands/initref.md">
+    **by [okuvshynov](https://github.com/okuvshynov)**
+    
+    Initializes reference documentation structure with standard doc templates, API reference setup, documentation conventions, and placeholder content generation.
+  </Card>
+  
+  <Card title="/load-llms-txt" icon="robot" href="https://github.com/ethpandaops/xatu-data/blob/master/.claude/commands/load-llms-txt.md">
+    **by [ethpandaops](https://github.com/ethpandaops)**
+    
+    Loads LLM configuration files to context, importing specific terminology, model configurations, and establishing baseline terminology for AI discussions.
+  </Card>
+</CardGroup>
+
+## Domain-Specific Context
+
+<CardGroup cols={2}>
+  <Card title="/load_coo_context" icon="matrix" href="https://github.com/Mjvolk3/torchcell/blob/main/.claude/commands/load_coo_context.md">
+    **by [Mjvolk3](https://github.com/Mjvolk3)**
+    
+    References specific files for sparse matrix operations, explains transform usage, compares with previous approaches, and sets data formatting context for development.
+  </Card>
+  
+  <Card title="/load_dango_pipeline" icon="pipe" href="https://github.com/Mjvolk3/torchcell/blob/main/.claude/commands/load_dango_pipeline.md">
+    **by [Mjvolk3](https://github.com/Mjvolk3)**
+    
+    Sets context for model training by referencing pipeline files, establishing working context, and preparing for pipeline work with relevant documentation.
+  </Card>
+</CardGroup>
+
+## Why Context Loading Matters
+
+<CardGroup cols={2}>
+  <Card title="Accurate Responses" icon="bullseye">
+    Claude provides more relevant and project-appropriate suggestions when properly primed with context.
+  </Card>
+  
+  <Card title="Consistent Standards" icon="ruler">
+    Loading project conventions ensures Claude follows your team's coding standards and patterns.
+  </Card>
+  
+  <Card title="Domain Knowledge" icon="graduation-cap">
+    Domain-specific context helps Claude understand specialized terminology and concepts.
+  </Card>
+  
+  <Card title="Faster Development" icon="forward">
+    Well-primed context reduces back-and-forth clarifications and speeds up development.
+  </Card>
+</CardGroup>
+
+## Context Loading Workflow
+
+A recommended workflow for loading context:
+
+1. **Initial Priming**: Start with `/context-prime` or `/prime` for overall project context
+2. **Load Documentation**: Use `/initref` or `/load-llms-txt` for reference materials
+3. **Domain Context**: Apply domain-specific commands like `/load_coo_context` as needed
+4. **Refresh Context**: Use `/rsi` to reload context when switching between project areas
+
+## Best Practices
+
+When using context loading commands:
+
+- **Prime Early**: Load context at the beginning of each session for best results
+- **Be Selective**: Load only relevant context to avoid overwhelming Claude
+- **Update Regularly**: Refresh context when project structure or conventions change
+- **Combine Commands**: Use multiple context commands for comprehensive coverage
+- **Document Patterns**: Create custom context commands for recurring project patterns

@@ -1,0 +1,110 @@
+---
+title: 'Ralph Wiggum Technique'
+description: 'Autonomous AI development loops for iterative task completion'
+icon: 'rotate'
+---
+
+## What is Ralph Wiggum?
+
+The **Ralph Wiggum technique** is an autonomous AI coding approach that runs AI coding agents in automated loops until specifications are fulfilled. Named after the Simpsons character, this technique enables Claude Code to work iteratively on projects with minimal human intervention, continuously refining and improving until completion criteria are met.
+
+## How It Works
+
+The Ralph Wiggum technique operates on a simple but effective principle:
+
+1. **Define Specifications** - Create clear, measurable completion criteria in a prompt or specification file
+2. **Autonomous Iteration** - The AI agent continuously works on the task, making incremental improvements
+3. **Self-Evaluation** - After each iteration, the agent evaluates whether specifications are met
+4. **Exit Detection** - The loop terminates when the task is complete or safety limits are reached
+5. **Safety Guardrails** - Rate limiting, circuit breakers, and iteration caps prevent infinite loops and API overuse
+
+## Ralph-Driven Development (RDD)
+
+Some practitioners have adopted **Ralph-Driven Development** as a workflow paradigm, where autonomous loops handle repetitive tasks, research, and iterative refinement while humans focus on high-level direction and decision-making.
+
+## Implementations & Resources
+
+<CardGroup cols={2}>
+  <Card title="awesome-ralph" icon="star" href="https://github.com/snwfdhmp/awesome-ralph">
+    A curated list of resources about Ralph, the AI coding technique that runs AI coding agents in automated loops until specifications are fulfilled.
+    
+    **By:** [Martin Joly](https://github.com/snwfdhmp)
+  </Card>
+  
+  <Card title="Ralph for Claude Code" icon="rotate" href="https://github.com/frankbria/ralph-claude-code">
+    An autonomous AI development framework that enables Claude Code to work iteratively on projects until completion. Features intelligent exit detection, rate limiting, circuit breaker patterns, and comprehensive safety guardrails. Built with Bash, integrated with tmux for live monitoring, and includes 75+ comprehensive tests.
+    
+    **By:** [Frank Bria](https://github.com/frankbria)
+  </Card>
+  
+  <Card title="ralph-orchestrator" icon="circle-nodes" href="https://github.com/mikeyobrien/ralph-orchestrator">
+    Implements the Ralph Wiggum technique for autonomous task completion, continuously running an AI agent against a prompt file until the task is marked as complete or limits are reached. Provides a robust, well-tested, and feature-complete orchestration system. Also cited in the Anthropic Ralph plugin documentation.
+    
+    **By:** [mikeyobrien](https://github.com/mikeyobrien)
+  </Card>
+  
+  <Card title="The Ralph Playbook" icon="book" href="https://github.com/ClaytonFarr/ralph-playbook">
+    A remarkably detailed and comprehensive guide to the Ralph Wiggum technique, featuring well-written theoretical commentary paired with practical guidelines and advice.
+    
+    **By:** [Clayton Farr](https://github.com/ClaytonFarr)
+  </Card>
+  
+  <Card title="ralph-wiggum-bdd" icon="vial" href="https://github.com/marcindulak/ralph-wiggum-bdd">
+    A standalone Bash script for Behavior-Driven Development with Ralph Wiggum Loop. While running unattended, the script can keep code and requirements in sync, but supports both automated and interactive human supervision modes.
+    
+    **By:** [marcindulak](https://github.com/marcindulak)
+  </Card>
+  
+  <Card title="Ralph Wiggum Marketer" icon="bullhorn" href="https://github.com/muratcankoylan/ralph-wiggum-marketer">
+    A Claude Code plugin providing an autonomous AI copywriter, integrating the Ralph loop with customized knowledge bases for market research agents. The agents do the research, Ralph writes the copy.
+    
+    **By:** [Muratcan Koylan](https://github.com/muratcankoylan)
+  </Card>
+</CardGroup>
+
+## Key Features of Ralph Implementations
+
+### Safety & Reliability
+- **Rate Limiting** - Prevents API throttling and excessive costs
+- **Circuit Breakers** - Stops execution when error thresholds are exceeded
+- **Iteration Caps** - Limits maximum number of loops to prevent runaway processes
+- **Exit Detection** - Intelligent recognition of completion signals
+
+### Monitoring & Observability
+- **Live Monitoring** - Real-time visibility into agent progress (e.g., tmux integration)
+- **Comprehensive Testing** - Well-tested implementations with 75+ test suites
+- **Logging** - Detailed execution logs for debugging and analysis
+
+### Integration
+- **Bash-Based** - Lightweight, portable implementations that work across environments
+- **Standalone Scripts** - Can be modified and committed directly into projects
+- **Plugin Architecture** - Compatible with Claude Code's plugin system
+
+## Use Cases
+
+The Ralph Wiggum technique is particularly effective for:
+
+- **Iterative Refinement** - Tasks requiring multiple passes to meet quality standards
+- **Research & Analysis** - Autonomous information gathering and synthesis
+- **Content Generation** - Copywriting, documentation, and creative writing with revision loops
+- **Test-Driven Development** - Continuously running tests and fixing failures until all pass
+- **Behavior-Driven Development** - Keeping code and specifications synchronized
+
+## Best Practices
+
+1. **Clear Exit Criteria** - Define unambiguous completion conditions
+2. **Incremental Specifications** - Break large tasks into smaller, measurable goals
+3. **Safety First** - Always implement rate limiting and circuit breakers
+4. **Human Oversight** - Monitor initial runs and adjust parameters as needed
+5. **Version Control** - Commit after each successful iteration for easy rollback
+
+## Considerations
+
+While Ralph Wiggum is a powerful technique, consider:
+
+- **API Costs** - Autonomous loops can consume significant API credits
+- **Quality Control** - Not all tasks benefit from unsupervised iteration
+- **Error Propagation** - Mistakes in early iterations can compound
+- **Specification Quality** - The technique is only as good as the specifications provided
+
+Whether or not you practice Ralph-Driven Development, these projects represent creative explorations of general agentic patterns and autonomous development workflows.

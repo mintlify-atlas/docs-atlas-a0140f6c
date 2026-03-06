@@ -1,0 +1,133 @@
+---
+title: Hooks
+description: Powerful API for activating commands and running scripts at different points in Claude's lifecycle
+---
+
+Hooks are a powerful API for Claude Code that allows users to activate commands and run scripts at different points in Claude's agentic lifecycle. They enable you to intercept, modify, or enhance Claude's behavior during various operations.
+
+## Available Hooks
+
+<CardGroup cols={2}>
+  <Card
+    title="Britfix"
+    icon="flag-uk"
+    href="https://github.com/Talieisin/britfix"
+  >
+    Claude outputs American spellings by default. Britfix converts to British English with a hook for automatic conversion as files are written. Context-aware: handles code files intelligently by only converting comments and docstrings.
+  </Card>
+
+  <Card
+    title="CC Notify"
+    icon="bell"
+    href="https://github.com/dazuiba/CCNotify"
+  >
+    Provides desktop notifications for Claude Code, alerting you to input needs or task completion, with one-click jumps back to VS Code and task duration display.
+  </Card>
+
+  <Card
+    title="cchooks"
+    icon="code"
+    href="https://github.com/GowayLee/cchooks"
+  >
+    A lightweight Python SDK with a clean API and good documentation. Simplifies the process of writing hooks and integrating them into your codebase, providing a nice abstraction over the JSON configuration files.
+  </Card>
+
+  <Card
+    title="Claude Code Hook Comms"
+    icon="comments"
+    href="https://github.com/aannoo/claude-hook-comms"
+  >
+    Lightweight CLI tool for real-time communication between Claude Code sub agents using hooks. Enables multi-agent collaboration with @-mention targeting and live dashboard monitoring.
+  </Card>
+
+  <Card
+    title="claude-code-hooks-sdk"
+    icon="php"
+    href="https://github.com/beyondcode/claude-hooks-sdk"
+  >
+    A Laravel-inspired PHP SDK for building Claude Code hook responses with a clean, fluent API. Makes it easy to create structured JSON responses using an expressive, chainable interface.
+  </Card>
+
+  <Card
+    title="claude-hooks"
+    icon="typescript"
+    href="https://github.com/johnlindquist/claude-hooks"
+  >
+    A TypeScript-based system for configuring and customizing Claude Code hooks with a powerful and flexible interface.
+  </Card>
+
+  <Card
+    title="Claudio"
+    icon="volume-high"
+    href="https://github.com/ctoth/claudio"
+  >
+    A no-frills little library that adds delightful OS-native sounds to Claude Code via simple hooks. It really sparks joy.
+  </Card>
+
+  <Card
+    title="Dippy"
+    icon="shield-check"
+    href="https://github.com/ldayton/Dippy"
+  >
+    Auto-approve safe bash commands using AST-based parsing, while prompting for destructive operations. Solves permission fatigue without disabling safety. Supports Claude Code, Gemini CLI, and Cursor.
+  </Card>
+
+  <Card
+    title="parry"
+    icon="shield-halved"
+    href="https://github.com/vaporif/parry"
+  >
+    Prompt injection scanner for Claude Code hooks. Scans tool inputs and outputs for injection attacks, secrets, and data exfiltration attempts. Early development phase but worth a look.
+  </Card>
+
+  <Card
+    title="TDD Guard"
+    icon="flask"
+    href="https://github.com/nizos/tdd-guard"
+  >
+    A hooks-driven system that monitors file operations in real-time and blocks changes that violate TDD principles.
+  </Card>
+
+  <Card
+    title="TypeScript Quality Hooks"
+    icon="check-double"
+    href="https://github.com/bartolli/claude-code-typescript-hooks"
+  >
+    Quality check hook for Node.js TypeScript projects with TypeScript compilation, ESLint auto-fixing, and Prettier formatting. Uses SHA256 config caching for < 5ms validation performance during real-time editing.
+  </Card>
+</CardGroup>
+
+## Hook Use Cases
+
+Hooks can be used for a variety of purposes:
+
+- **Code Quality**: Automatically format, lint, or validate code as it's written
+- **Security**: Scan for vulnerabilities, secrets, or injection attacks
+- **Notifications**: Alert you when Claude needs input or completes tasks
+- **Localization**: Convert language variants (e.g., American to British English)
+- **Testing**: Enforce TDD principles or run automated tests
+- **Communication**: Enable multi-agent collaboration and coordination
+- **User Experience**: Add audio feedback or custom behaviors
+
+## Creating Custom Hooks
+
+Several SDKs make it easy to create custom hooks:
+
+- **cchooks** (Python): Lightweight SDK with clean API
+- **claude-code-hooks-sdk** (PHP): Laravel-inspired fluent interface
+- **claude-hooks** (TypeScript): Powerful and flexible configuration system
+
+<Warning>
+When creating hooks that modify code or block operations, ensure they are well-tested to avoid disrupting your workflow.
+</Warning>
+
+## Getting Started
+
+1. Choose a hook implementation or SDK that fits your needs
+2. Install the hook following the repository's instructions
+3. Configure the hook in your Claude Code settings
+4. Test the hook behavior in a safe environment before production use
+
+<Tip>
+Start with simple hooks like notifications or formatting before implementing more complex behaviors like security scanning or TDD enforcement.
+</Tip>

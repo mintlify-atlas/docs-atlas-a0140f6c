@@ -1,0 +1,283 @@
+---
+title: CLAUDE.md Files
+description: Context-specific guidelines that help Claude Code understand your project and coding standards
+---
+
+`CLAUDE.md` files contain important guidelines and context-specific information or instructions that help Claude Code better understand your project and your coding standards. These files serve as a persistent reference that Claude consults throughout your development sessions.
+
+## What Are CLAUDE.md Files?
+
+A `CLAUDE.md` file is a special markdown document placed in the root of your project that provides Claude Code with:
+
+- Project-specific coding conventions and style guidelines
+- Build and test commands
+- Architecture and module structure information
+- Development workflows and best practices
+- Technology stack details and dependencies
+- Security considerations and requirements
+
+## Types of CLAUDE.md Files
+
+### Language-Specific
+
+These files provide guidance for projects using specific programming languages and frameworks:
+
+<CardGroup cols={2}>
+  <Card
+    title="AI IntelliJ Plugin"
+    icon="java"
+    href="https://github.com/didalgolab/ai-intellij-plugin/blob/main/CLAUDE.md"
+  >
+    Comprehensive Gradle commands for IntelliJ plugin development with platform-specific coding patterns and internationalization standards.
+  </Card>
+
+  <Card
+    title="AWS MCP Server"
+    icon="python"
+    href="https://github.com/alexei-led/aws-mcp-server/blob/main/CLAUDE.md"
+  >
+    Multiple Python environment setup options with detailed code style guidelines and security considerations for AWS CLI interactions.
+  </Card>
+
+  <Card
+    title="DroidconKotlin"
+    icon="k"
+    href="https://github.com/touchlab/DroidconKotlin/blob/main/CLAUDE.md"
+  >
+    Gradle commands for cross-platform Kotlin Multiplatform development with clear module structure and dependency injection guidance.
+  </Card>
+
+  <Card
+    title="Giselle"
+    icon="node-js"
+    href="https://github.com/giselles-ai/giselle/blob/main/CLAUDE.md"
+  >
+    Build and test commands using pnpm and Vitest with strict code formatting requirements and comprehensive naming conventions.
+  </Card>
+
+  <Card
+    title="HASH"
+    icon="rust"
+    href="https://github.com/hashintel/hash/blob/main/CLAUDE.md"
+  >
+    Comprehensive repository structure breakdown with emphasis on Rust documentation guidelines and systematic PR review process.
+  </Card>
+
+  <Card
+    title="Inkline"
+    icon="vuejs"
+    href="https://github.com/inkline/inkline/blob/main/CLAUDE.md"
+  >
+    Development workflow using pnpm with TypeScript and Vue 3 Composition API, detailed component creation process, and testing recommendations.
+  </Card>
+
+  <Card
+    title="JSBeeb"
+    icon="js"
+    href="https://github.com/mattgodbolt/jsbeeb/blob/main/CLAUDE.md"
+  >
+    Development guide for JavaScript BBC Micro emulator with build and testing instructions, architecture documentation, and debugging workflows.
+  </Card>
+
+  <Card
+    title="LangGraphJS"
+    icon="typescript"
+    href="https://github.com/langchain-ai/langgraphjs/blob/main/CLAUDE.md"
+  >
+    Build and test commands with detailed TypeScript style guidelines, layered library architecture, and monorepo structure using yarn workspaces.
+  </Card>
+
+  <Card
+    title="Metabase"
+    icon="clojure"
+    href="https://github.com/metabase/metabase/blob/master/CLAUDE.md"
+  >
+    Workflow for REPL-driven development in Clojure/ClojureScript with emphasis on incremental development and testing.
+  </Card>
+
+  <Card
+    title="SPy"
+    icon="code"
+    href="https://github.com/spylang/spy/blob/main/CLAUDE.md"
+  >
+    Strict coding conventions with comprehensive testing guidelines, multiple code compilation options, and backend-specific test decorators.
+  </Card>
+
+  <Card
+    title="TPL"
+    icon="golang"
+    href="https://github.com/KarpelesLab/tpl/blob/master/CLAUDE.md"
+  >
+    Go project conventions with comprehensive error handling recommendations, table-driven testing approach guidelines, and modernization suggestions.
+  </Card>
+</CardGroup>
+
+### Domain-Specific
+
+These files provide context for specific application domains or use cases:
+
+<CardGroup cols={2}>
+  <Card
+    title="Course Builder"
+    icon="graduation-cap"
+    href="https://github.com/badass-courses/course-builder/blob/main/CLAUDE.md"
+  >
+    Real-time multiplayer capabilities for collaborative course creation with diverse tech stack integration and monorepo architecture using Turborepo.
+  </Card>
+
+  <Card
+    title="Cursor Tools"
+    icon="terminal"
+    href="https://github.com/eastlondoner/cursor-tools/blob/main/CLAUDE.md"
+  >
+    Versatile AI command interface supporting multiple providers and models with flexible command options and browser automation through "Stagehand".
+  </Card>
+
+  <Card
+    title="Guitar"
+    icon="git-alt"
+    href="https://github.com/soramimi/Guitar/blob/master/CLAUDE.md"
+  >
+    Development guide for Guitar Git GUI Client with build commands for various platforms and code style guidelines for contributing.
+  </Card>
+
+  <Card
+    title="Network Chronicles"
+    icon="gamepad"
+    href="https://github.com/Fimeg/NetworkChronicles/blob/legacy-v1/CLAUDE.md"
+  >
+    Detailed implementation plan for AI-driven game characters with technical specifications for LLM integration and character guidelines.
+  </Card>
+
+  <Card
+    title="Pareto Mac"
+    icon="shield"
+    href="https://github.com/ParetoSecurity/pareto-mac/blob/main/CLAUDE.md"
+  >
+    Development guide for Mac security audit tool with build instructions, contribution guidelines, testing procedures, and workflow documentation.
+  </Card>
+
+  <Card
+    title="pre-commit-hooks"
+    icon="git"
+    href="https://github.com/aRustyDev/pre-commit-hooks"
+  >
+    Exemplary documentation that is thorough but not verbose. Great learning resource for how to write effective CLAUDE.md files.
+  </Card>
+
+  <Card
+    title="SteadyStart"
+    icon="rocket"
+    href="https://github.com/steadycursor/steadystart/blob/main/CLAUDE.md"
+  >
+    Clear and direct instructions about style, permissions, Claude's "role", communications, and documentation of Claude Code sessions for team members.
+  </Card>
+</CardGroup>
+
+### Project Scaffolding & MCP
+
+These files help with project setup and Model Context Protocol integration:
+
+<CardGroup cols={2}>
+  <Card
+    title="Basic Memory"
+    icon="brain"
+    href="https://github.com/basicmachines-co/basic-memory/blob/main/CLAUDE.md"
+  >
+    Innovative AI-human collaboration framework with Model Context Protocol for bidirectional LLM-markdown communication and flexible knowledge structure.
+  </Card>
+
+  <Card
+    title="claude-code-mcp-enhanced"
+    icon="cog"
+    href="https://github.com/grahama1970/claude-code-mcp-enhanced/blob/main/CLAUDE.md"
+  >
+    Detailed and emphatic instructions for Claude to follow as a coding agent, with testing guidance, code examples, and compliance checks.
+  </Card>
+</CardGroup>
+
+## Creating Your CLAUDE.md File
+
+When creating a `CLAUDE.md` file for your project, consider including:
+
+### 1. Project Overview
+```markdown
+# Project Name
+
+Brief description of what this project does and its main purpose.
+```
+
+### 2. Technology Stack
+```markdown
+## Tech Stack
+
+- Language: TypeScript
+- Framework: React
+- Build Tool: Vite
+- Testing: Vitest
+```
+
+### 3. Development Commands
+```markdown
+## Commands
+
+- `npm install` - Install dependencies
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm test` - Run tests
+```
+
+### 4. Coding Standards
+```markdown
+## Coding Standards
+
+- Use TypeScript strict mode
+- Follow ESLint configuration
+- Write tests for all new features
+- Use conventional commits
+```
+
+### 5. Project Structure
+```markdown
+## Project Structure
+
+- `/src` - Source code
+- `/tests` - Test files
+- `/docs` - Documentation
+```
+
+## Best Practices
+
+<Tip>
+**Keep it concise**: Focus on information Claude actually needs. Avoid verbose explanations.
+</Tip>
+
+<Tip>
+**Update regularly**: Keep your CLAUDE.md file in sync with your project as it evolves.
+</Tip>
+
+<Warning>
+**Avoid shouting**: Don't write everything in ALL CAPS. Claude responds better to clear, well-structured information than emphasis through capitalization.
+</Warning>
+
+<Note>
+**Be specific**: Include actual commands, file paths, and conventions rather than general advice.
+</Note>
+
+## Examples to Learn From
+
+Several projects are highlighted for having particularly well-crafted `CLAUDE.md` files:
+
+- **pre-commit-hooks**: Thorough but not verbose, great learning resource
+- **SteadyStart**: Clear and direct instructions about style and workflow
+- **HASH**: Comprehensive structure breakdown with strong emphasis on coding standards
+- **Metabase**: Excellent example of REPL-driven development workflow documentation
+
+## Getting Started
+
+1. Review example `CLAUDE.md` files from projects similar to yours
+2. Start with basic project information and commands
+3. Add coding standards and conventions specific to your project
+4. Include any special workflows or processes
+5. Test with Claude Code to ensure the instructions are clear
+6. Iterate based on Claude's performance and your team's needs

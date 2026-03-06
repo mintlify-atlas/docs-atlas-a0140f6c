@@ -1,122 +1,105 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Awesome Claude Code",
+  "theme": "palm",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#242b2c",
+    "light": "#040404",
+    "dark": "#6a6a6d"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "https://media.brand.dev/ee6343d7-855a-403a-bf10-e9c1df278e3c.png",
+  "logo": {
+    "light": "https://media.brand.dev/c1e3af42-7098-4c50-9cfe-baabb239e68b.svg",
+    "dark": "https://media.brand.dev/c1e3af42-7098-4c50-9cfe-baabb239e68b.svg"
+  },
+  "navbar": {
+    "primary": {
+      "type": "github",
+      "href": "https://github.com/hesreallyhim/awesome-claude-code"
+    }
+  },
+  "footer": {
+    "socials": {
+      "github": "https://github.com/hesreallyhim/awesome-claude-code"
+    }
+  },
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Resources",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Get Started",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "introduction",
+              "contributing",
+              "latest-additions"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Agent Skills",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "agent-skills/overview",
+              "agent-skills/general",
+              "agent-skills/scientific",
+              "agent-skills/security"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Workflows & Guides",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "workflows/overview",
+              "workflows/general",
+              "workflows/ralph-wiggum",
+              "workflows/project-management"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Tooling",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "tooling/overview",
+              "tooling/general",
+              "tooling/ide-integrations",
+              "tooling/usage-monitors",
+              "tooling/orchestrators",
+              "tooling/config-managers"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "configuration/status-lines",
+              "configuration/hooks",
+              "configuration/slash-commands",
+              "configuration/claude-files"
+            ]
+          },
+          {
+            "group": "Slash Commands",
+            "pages": [
+              "slash-commands/overview",
+              "slash-commands/version-control",
+              "slash-commands/code-analysis",
+              "slash-commands/context-loading",
+              "slash-commands/documentation",
+              "slash-commands/ci-deployment",
+              "slash-commands/project-management"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Community",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Resources",
             "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "community/alternative-clients",
+              "community/official-docs"
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+    ]
   }
 }
