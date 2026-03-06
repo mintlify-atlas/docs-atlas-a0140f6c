@@ -1,0 +1,108 @@
+{
+  "projectType": "general",
+  "projectName": "Awesome Claude Code",
+  "projectDescription": "A curated list of skills, agents, plugins, hooks, slash-commands, and other tools for enhancing Claude Code workflows",
+  "theme": "palm",
+  "primaryColor": "#242b2c",
+  "lightColor": "#040404",
+  "darkColor": "#6a6a6d",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Resources",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "contributing",
+              "latest-additions"
+            ]
+          },
+          {
+            "group": "Agent Skills",
+            "pages": [
+              "agent-skills/overview",
+              "agent-skills/general",
+              "agent-skills/scientific",
+              "agent-skills/security"
+            ]
+          },
+          {
+            "group": "Workflows & Guides",
+            "pages": [
+              "workflows/overview",
+              "workflows/general",
+              "workflows/ralph-wiggum",
+              "workflows/project-management"
+            ]
+          },
+          {
+            "group": "Tooling",
+            "pages": [
+              "tooling/overview",
+              "tooling/general",
+              "tooling/ide-integrations",
+              "tooling/usage-monitors",
+              "tooling/orchestrators",
+              "tooling/config-managers"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "configuration/status-lines",
+              "configuration/hooks",
+              "configuration/slash-commands",
+              "configuration/claude-files"
+            ]
+          },
+          {
+            "group": "Slash Commands",
+            "pages": [
+              "slash-commands/overview",
+              "slash-commands/version-control",
+              "slash-commands/code-analysis",
+              "slash-commands/context-loading",
+              "slash-commands/documentation",
+              "slash-commands/ci-deployment",
+              "slash-commands/project-management"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Community",
+        "groups": [
+          {
+            "group": "Resources",
+            "pages": [
+              "community/alternative-clients",
+              "community/official-docs"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Curated collection of 100+ Claude Code resources",
+    "Agent skills for specialized tasks",
+    "Development workflows and methodologies",
+    "Hooks for lifecycle customization",
+    "Slash commands for common operations",
+    "IDE integrations and tooling",
+    "Usage monitoring and analytics",
+    "Configuration management tools"
+  ],
+  "publicApiSurface": [
+    "Agent Skills - Model-controlled configurations for specialized tasks",
+    "Workflows - Tightly coupled Claude Code-native resources",
+    "Hooks - Lifecycle API for running scripts at different points",
+    "Slash Commands - Customized prompts for specific tasks",
+    "Status Lines - Terminal status bar customizations",
+    "CLAUDE.md Files - Project-specific instructions",
+    "Alternative Clients - Third-party interfaces",
+    "Tooling - CLI tools and utilities"
+  ]
+}
